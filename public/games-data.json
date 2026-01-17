@@ -1,0 +1,1141 @@
+{
+  "games": [
+    {
+      "id": 5,
+      "name": "PUBG Mobile",
+      "aliases": ["пабг", "пубг", "пабг мобайл", "пубг мобайл"],
+      "currency": "UC",
+      "genre": "Battle Royale",
+      "platform": "Mobile",
+      "publisher": "Tencent Games",
+      "description": "Королевская битва на мобильных устройствах. Покупайте UC для получения Royal Pass, скинов оружия и костюмов.",
+      "minPrice": 80,
+      "image": "images/pubg mobile.jpg",
+      "icon": "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
+      "packages": [
+        {
+          "name": "60 UC",
+          "amount": "60",
+          "price": 80,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "300 UC",
+          "amount": "300",
+          "price": 400,
+          "bonus": "+25 бонус",
+          "popular": true
+        },
+        {
+          "name": "600 UC",
+          "amount": "600",
+          "price": 800,
+          "bonus": "+60 бонус",
+          "popular": false
+        },
+        {
+          "name": "985 UC",
+          "amount": "985",
+          "price": 1150,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "1320 UC",
+          "amount": "1320",
+          "price": 1500,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "1500 UC",
+          "amount": "1500",
+          "price": 2000,
+          "bonus": "+300 бонус",
+          "popular": false
+        },
+        {
+          "name": "2460 UC",
+          "amount": "2460",
+          "price": 2600,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "2785 UC",
+          "amount": "2785",
+          "price": 2900,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "3000 UC",
+          "amount": "3000",
+          "price": 3900,
+          "bonus": "+850 бонус",
+          "popular": false
+        },
+        {
+          "name": "5650 UC",
+          "amount": "5650",
+          "price": 5600,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "6000 UC",
+          "amount": "6000",
+          "price": 7800,
+          "bonus": "+2100 бонус",
+          "popular": false
+        },
+        {
+          "name": "11950 UC",
+          "amount": "11950",
+          "price": 11000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "16200 UC",
+          "amount": "16200",
+          "price": 14500,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "24300 UC",
+          "amount": "24300",
+          "price": 21000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "32400 UC",
+          "amount": "32400",
+          "price": 27000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "40500 UC",
+          "amount": "40500",
+          "price": 33000,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Андрей",
+          "rating": 5,
+          "date": "2024-10-23",
+          "text": "Отличный магазин! UC пришли мгновенно, цены приемлемые."
+        },
+        {
+          "author": "Татьяна",
+          "rating": 5,
+          "date": "2024-10-20",
+          "text": "Пополняю здесь постоянно для сына. Всё быстро и без проблем."
+        },
+        {
+          "author": "Павел",
+          "rating": 5,
+          "date": "2024-10-15",
+          "text": "Лучшие цены на UC! Буду покупать только здесь."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как узнать мой Player ID?",
+          "answer": "Откройте игру, нажмите на значок профиля. ID отображается под именем игрока."
+        },
+        {
+          "question": "Работает ли для всех версий?",
+          "answer": "Да, мы поддерживаем PUBG Mobile (глобальная версия) и PUBG Mobile Lite."
+        },
+        {
+          "question": "Нужен ли пароль от аккаунта?",
+          "answer": "Нет, пароль не требуется. Нужен только ваш Player ID."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Android 5.1.1 / iOS 9.0",
+          "processor": "Quad Core 1.8 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "Adreno 506",
+          "storage": "2 GB"
+        },
+        "recommended": {
+          "os": "Android 7.0 / iOS 11.0",
+          "processor": "Octa Core 2.0 GHz",
+          "memory": "4 GB RAM",
+          "graphics": "Adreno 630",
+          "storage": "3 GB"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Roblox",
+      "aliases": ["роблокс"],
+      "currency": "Robux",
+      "genre": "Sandbox",
+      "platform": "Mobile, Xbox, PlayStation",
+      "publisher": "Roblox Corporation",
+      "description": "Платформа для создания и игры в миллионы пользовательских игр. Покупайте Robux для покупки предметов, игр и аксессуаров.",
+      "minPrice": 18,
+      "image": "images/roblox.jpg",
+      "icon": "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+      "packages": [
+        {
+          "name": "80 Robux",
+          "amount": "80",
+          "price": 18,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "400 Robux",
+          "amount": "400",
+          "price": 90,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "800 Robux",
+          "amount": "800",
+          "price": 180,
+          "bonus": "",
+          "popular": true
+        },
+        {
+          "name": "1700 Robux",
+          "amount": "1700",
+          "price": 360,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "4500 Robux",
+          "amount": "4500",
+          "price": 900,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "10000 Robux",
+          "amount": "10000",
+          "price": 2000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "22500 Robux",
+          "amount": "22500",
+          "price": 4000,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Екатерина",
+          "rating": 5,
+          "date": "2024-10-22",
+          "text": "Покупаю Robux для дочери. Всё приходит быстро, ребёнок доволен!"
+        },
+        {
+          "author": "Илья",
+          "rating": 5,
+          "date": "2024-10-19",
+          "text": "Отличный сайт! Robux пришли через минуту после оплаты."
+        },
+        {
+          "author": "Светлана",
+          "rating": 5,
+          "date": "2024-10-16",
+          "text": "Надёжный магазин, покупаем здесь уже полгода."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как получить Robux?",
+          "answer": "Robux зачисляются на ваш аккаунт Roblox автоматически в течение 5-15 минут."
+        },
+        {
+          "question": "Нужен ли логин от аккаунта?",
+          "answer": "Да, для зачисления Robux потребуется ваш логин Roblox (не пароль!)."
+        },
+        {
+          "question": "Есть ли возрастные ограничения?",
+          "answer": "Покупка доступна всем, но аккаунт должен быть старше 30 дней."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Windows 7 / macOS 10.10",
+          "processor": "1.6 GHz",
+          "memory": "1 GB RAM",
+          "graphics": "DirectX 9",
+          "storage": "20 MB"
+        },
+        "recommended": {
+          "os": "Windows 10 / macOS 10.13",
+          "processor": "2.0 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "DirectX 11",
+          "storage": "100 MB"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Clash of Clans",
+      "aliases": ["клеш оф кланс", "клаш оф кланс"],
+      "currency": "Gems",
+      "genre": "Strategy",
+      "platform": "Mobile",
+      "publisher": "Supercell",
+      "description": "Легендарная мобильная стратегия. Покупайте гемы для ускорения строительства, получения ресурсов и прокачки деревни.",
+      "minPrice": 90,
+      "image": "images/clash of clans.png",
+      "icon": "M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5",
+      "packages": [
+        {
+          "name": "80 Gems",
+          "amount": "80",
+          "price": 15,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "500 Gems",
+          "amount": "500",
+          "price": 90,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "1200 Gems",
+          "amount": "1200",
+          "price": 200,
+          "bonus": "",
+          "popular": true
+        },
+        {
+          "name": "1850 Gems",
+          "amount": "1850",
+          "price": 300,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "2500 Gems",
+          "amount": "2500",
+          "price": 400,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "6500 Gems",
+          "amount": "6500",
+          "price": 1000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "9000 Gems",
+          "amount": "9000",
+          "price": 1400,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "14000 Gems",
+          "amount": "14000",
+          "price": 2200,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "20500 Gems",
+          "amount": "20500",
+          "price": 3200,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "28000 Gems",
+          "amount": "28000",
+          "price": 4500,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "42000 Gems",
+          "amount": "42000",
+          "price": 6500,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Вадим",
+          "rating": 5,
+          "date": "2024-10-24",
+          "text": "Отличный магазин! Гемы пришли моментально, буду брать ещё."
+        },
+        {
+          "author": "Юлия",
+          "rating": 5,
+          "date": "2024-10-21",
+          "text": "Покупаю здесь гемы для мужа. Всегда быстро и без проблем."
+        },
+        {
+          "author": "Денис",
+          "rating": 5,
+          "date": "2024-10-17",
+          "text": "Лучшие цены на гемы! Рекомендую всем кланерам."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как найти мой Player Tag?",
+          "answer": "Откройте игру, нажмите на настройки, затем на 'Помощь'. Ваш тег отображается в правом верхнем углу."
+        },
+        {
+          "question": "Сколько времени занимает доставка?",
+          "answer": "Гемы зачисляются в течение 5-15 минут после оплаты."
+        },
+        {
+          "question": "Безопасно ли покупать гемы?",
+          "answer": "Да, мы используем официальные методы. Ваш аккаунт в безопасности."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Android 4.1 / iOS 8.0",
+          "processor": "Dual Core 1.0 GHz",
+          "memory": "1 GB RAM",
+          "graphics": "Any",
+          "storage": "200 MB"
+        },
+        "recommended": {
+          "os": "Android 6.0 / iOS 11.0",
+          "processor": "Quad Core 1.5 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "Any",
+          "storage": "300 MB"
+        }
+      }
+    },
+    {
+      "id": "brawl-stars",
+      "name": "Brawl Stars",
+      "aliases": ["бравл старс"],
+      "currency": "Gems",
+      "genre": "MOBA",
+      "platform": "Mobile",
+      "publisher": "Supercell",
+      "description": "Динамичная многопользовательская игра в различных режимах. Покупайте гемы для получения бойцов, скинов и Brawl Pass.",
+      "minPrice": 75,
+      "image": "images/brawl-stars.jpg.jpg",
+      "icon": "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z",
+      "packages": [
+        {
+          "name": "30 Gems",
+          "amount": "30",
+          "price": 35,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "80 Gems",
+          "amount": "80",
+          "price": 75,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "170 Gems",
+          "amount": "170",
+          "price": 150,
+          "bonus": "",
+          "popular": true
+        },
+        {
+          "name": "360 Gems",
+          "amount": "360",
+          "price": 300,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "950 Gems",
+          "amount": "950",
+          "price": 750,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "2000 Gems",
+          "amount": "2000",
+          "price": 1600,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "2950 Gems",
+          "amount": "2950",
+          "price": 2400,
+          "bonus": "",
+          "popular": false,
+          "image": "images/brawl6.png"
+        },
+        {
+          "name": "4000 Gems",
+          "amount": "4000",
+          "price": 3200,
+          "bonus": "",
+          "popular": false,
+          "image": "images/brawl6.png"
+        },
+        {
+          "name": "6000 Gems",
+          "amount": "6000",
+          "price": 4800,
+          "bonus": "",
+          "popular": false,
+          "image": "images/brawl6.png"
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Марк",
+          "rating": 5,
+          "date": "2024-10-26",
+          "text": "Быстрая доставка гемов, отличные цены. Буду покупать ещё!"
+        },
+        {
+          "author": "Дарья",
+          "rating": 5,
+          "date": "2024-10-23",
+          "text": "Покупаю здесь постоянно, никогда не подводили."
+        },
+        {
+          "author": "Тимур",
+          "rating": 4,
+          "date": "2024-10-19",
+          "text": "Хороший сервис, один раз пришлось подождать 15 минут, но в целом отлично."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как узнать мой Player Tag?",
+          "answer": "Откройте Brawl Stars, нажмите на профиль. Тег указан под вашим именем."
+        },
+        {
+          "question": "Как быстро придут гемы?",
+          "answer": "Гемы зачисляются автоматически в течение 5-10 минут."
+        },
+        {
+          "question": "Можно ли купить гемы для друга?",
+          "answer": "Да, просто укажите его Player Tag при оформлении заказа."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Android 4.4 / iOS 9.0",
+          "processor": "Dual Core 1.2 GHz",
+          "memory": "1 GB RAM",
+          "graphics": "Adreno 305",
+          "storage": "200 MB"
+        },
+        "recommended": {
+          "os": "Android 6.0 / iOS 11.0",
+          "processor": "Quad Core 1.5 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "Adreno 506",
+          "storage": "300 MB"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Call of Duty Mobile",
+      "aliases": ["колл оф дьюти", "колда", "колда мобайл"],
+      "currency": "CP",
+      "genre": "Shooter",
+      "platform": "Mobile",
+      "publisher": "Activision",
+      "description": "Культовый шутер на мобильных устройствах. Покупайте CP для получения боевых пропусков, ящиков и скинов оружия.",
+      "minPrice": 80,
+      "image": "images/call of dutty mobile.jpg",
+      "icon": "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+      "packages": [
+        {
+          "name": "88 CP",
+          "amount": "88",
+          "price": 88,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "420 CP",
+          "amount": "420",
+          "price": 350,
+          "bonus": "",
+          "popular": true
+        },
+        {
+          "name": "880 CP",
+          "amount": "880",
+          "price": 700,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "2400 CP",
+          "amount": "2400",
+          "price": 1750,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "5000 CP",
+          "amount": "5000",
+          "price": 4375,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "10800 CP",
+          "amount": "10800",
+          "price": 9450,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "13200 CP",
+          "amount": "13200",
+          "price": 11550,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "15800 CP",
+          "amount": "15800",
+          "price": 13825,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "21600 CP",
+          "amount": "21600",
+          "price": 18900,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "32400 CP",
+          "amount": "32400",
+          "price": 28350,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "43200 CP",
+          "amount": "43200",
+          "price": 37800,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "54000 CP",
+          "amount": "54000",
+          "price": 47250,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Евгений",
+          "rating": 5,
+          "date": "2024-10-27",
+          "text": "Лучший сервис для покупки CP! Моментальная доставка."
+        },
+        {
+          "author": "Наталья",
+          "rating": 5,
+          "date": "2024-10-25",
+          "text": "Покупаю CP для сына регулярно. Всё быстро и безопасно."
+        },
+        {
+          "author": "Антон",
+          "rating": 5,
+          "date": "2024-10-22",
+          "text": "Отличные цены и быстрая доставка. Рекомендую!"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как узнать мой Player ID?",
+          "answer": "Откройте игру, нажмите на профиль. ID отображается в правом верхнем углу."
+        },
+        {
+          "question": "Как быстро придут CP?",
+          "answer": "CP зачисляются автоматически в течение 5-20 минут."
+        },
+        {
+          "question": "Безопасно ли это?",
+          "answer": "Да, мы используем только официальные методы пополнения."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Android 5.1 / iOS 9.0",
+          "processor": "Quad Core 1.5 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "Adreno 505",
+          "storage": "2 GB"
+        },
+        "recommended": {
+          "os": "Android 7.0 / iOS 11.0",
+          "processor": "Octa Core 2.0 GHz",
+          "memory": "4 GB RAM",
+          "graphics": "Adreno 630",
+          "storage": "3 GB"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Clash Royale",
+      "aliases": ["клеш рояль", "клаш рояль"],
+      "currency": "Gems",
+      "genre": "Strategy",
+      "platform": "Mobile",
+      "publisher": "Supercell",
+      "description": "Карточная стратегия в реальном времени. Покупайте гемы для получения сундуков, эмоций и ускорения прогресса.",
+      "minPrice": 85,
+      "image": "images/clash royale.jpg",
+      "icon": "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
+      "packages": [
+        {
+          "name": "80 Gems",
+          "amount": "80",
+          "price": 15,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "500 Gems",
+          "amount": "500",
+          "price": 85,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "1200 Gems",
+          "amount": "1200",
+          "price": 190,
+          "bonus": "",
+          "popular": true
+        },
+        {
+          "name": "2500 Gems",
+          "amount": "2500",
+          "price": 380,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "6500 Gems",
+          "amount": "6500",
+          "price": 950,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "9000 Gems",
+          "amount": "9000",
+          "price": 1300,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "14000 Gems",
+          "amount": "14000",
+          "price": 2000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "16500 Gems",
+          "amount": "16500",
+          "price": 2400,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "28000 Gems",
+          "amount": "28000",
+          "price": 4000,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Ярослав",
+          "rating": 5,
+          "date": "2024-10-27",
+          "text": "Лучший сайт для покупки гемов CR! Моментально и безопасно."
+        },
+        {
+          "author": "Виолетта",
+          "rating": 5,
+          "date": "2024-10-24",
+          "text": "Покупаю регулярно, всегда быстро и без проблем."
+        },
+        {
+          "author": "Семён",
+          "rating": 5,
+          "date": "2024-10-20",
+          "text": "Отличные цены, быстрая доставка. Рекомендую!"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Как найти мой Player Tag?",
+          "answer": "Откройте Clash Royale, нажмите на профиль. Тег указан в верхней части экрана."
+        },
+        {
+          "question": "Как быстро придут гемы?",
+          "answer": "Гемы зачисляются автоматически в течение 5-15 минут."
+        },
+        {
+          "question": "Безопасно ли покупать?",
+          "answer": "Да, мы используем официальные методы. Ваш аккаунт в безопасности."
+        }
+      ],
+      "requirements": {
+        "minimum": {
+          "os": "Android 4.4 / iOS 9.0",
+          "processor": "Dual Core 1.0 GHz",
+          "memory": "1 GB RAM",
+          "graphics": "Any",
+          "storage": "200 MB"
+        },
+        "recommended": {
+          "os": "Android 6.0 / iOS 11.0",
+          "processor": "Quad Core 1.5 GHz",
+          "memory": "2 GB RAM",
+          "graphics": "Any",
+          "storage": "300 MB"
+        }
+      }
+    },
+    {
+      "id": "delta-force",
+      "name": "Delta Force (ПК и Мобайл)",
+      "aliases": ["дельта форс"],
+      "currency": "Credits",
+      "genre": "Shooter",
+      "platform": "PC, Mobile",
+      "publisher": "TiMi Studio Group",
+      "description": "Новый тактический шутер от первого лица с кроссплатформенной игрой.",
+      "minPrice": 60,
+      "image": "images/delta force.jpg",
+      "icon": "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+      "packages": [
+        {
+          "name": "60 Credits",
+          "amount": "60",
+          "price": 60,
+          "bonus": "+12 бонус",
+          "popular": false
+        },
+        {
+          "name": "300 Credits",
+          "amount": "300",
+          "price": 300,
+          "bonus": "+80 бонус",
+          "popular": false,
+          "image": "images/Arena Breakout3.png"
+        },
+        {
+          "name": "420 Credits",
+          "amount": "420",
+          "price": 420,
+          "bonus": "+124 бонус",
+          "popular": false
+        },
+        {
+          "name": "680 Credits",
+          "amount": "680",
+          "price": 680,
+          "bonus": "+206 бонус",
+          "popular": true
+        },
+        {
+          "name": "1280 Credits",
+          "amount": "1280",
+          "price": 1280,
+          "bonus": "+456 бонус",
+          "popular": false
+        },
+        {
+          "name": "1680 Credits",
+          "amount": "1680",
+          "price": 1680,
+          "bonus": "+636 бонус",
+          "popular": false
+        },
+        {
+          "name": "3280 Credits",
+          "amount": "3280",
+          "price": 3280,
+          "bonus": "+1326 бонус",
+          "popular": false
+        },
+        {
+          "name": "6480 Credits",
+          "amount": "6480",
+          "price": 6500,
+          "bonus": "+2916 бонус",
+          "popular": false
+        },
+        {
+          "name": "12960 Credits",
+          "amount": "12960",
+          "price": 13000,
+          "bonus": "+5832 бонус",
+          "popular": false
+        },
+        {
+          "name": "19440 Credits",
+          "amount": "19440",
+          "price": 19500,
+          "bonus": "+8748 бонус",
+          "popular": false
+        }
+      ],
+      "reviews": [],
+      "faq": [],
+      "requirements": {}
+    },
+    {
+      "id": 18,
+      "name": "Arena Breakout",
+      "aliases": ["арена брейкаут", "arena breakout"],
+      "currency": "Облигации",
+      "genre": "Shooter",
+      "platform": "Mobile",
+      "publisher": "Morefun Studios",
+      "description": "Мобильный тактический шутер с высоким уровнем реализма. Покупайте кредиты для открытия кейсов, улучшения снаряжения и покупки редкого лута.",
+      "minPrice": 100,
+      "image": "images/арена.jpg",
+      "icon": "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+      "packages": [
+        {
+          "name": "60 Облигации",
+          "amount": "60",
+          "price": 60,
+          "bonus": "+6 бонус",
+          "popular": false
+        },
+        {
+          "name": "310 Облигации",
+          "amount": "310",
+          "price": 300,
+          "bonus": "+25 бонус",
+          "popular": true,
+          "image": "images/Arena Breakout3.png"
+        },
+        {
+          "name": "630 Облигации",
+          "amount": "630",
+          "price": 600,
+          "bonus": "+45 бонус",
+          "popular": false,
+          "image": "images/Arena Breakout3.png"
+        },
+        {
+          "name": "1580 Облигации",
+          "amount": "1580",
+          "price": 1500,
+          "bonus": "+110 бонус",
+          "popular": false
+        },
+        {
+          "name": "3200 Облигации",
+          "amount": "3200",
+          "price": 3000,
+          "bonus": "+200 бонус",
+          "popular": false
+        },
+        {
+          "name": "5090 Облигации",
+          "amount": "5090",
+          "price": 4500,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "6500 Облигации",
+          "amount": "6500",
+          "price": 5800,
+          "bonus": "+320 бонус",
+          "popular": false
+        },
+        {
+          "name": "10220 Облигации",
+          "amount": "10220",
+          "price": 8500,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "13640 Облигации",
+          "amount": "13640",
+          "price": 11000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "20460 Облигации",
+          "amount": "20460",
+          "price": 16000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "27280 Облигации",
+          "amount": "27280",
+          "price": 21000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "34100 Облигации",
+          "amount": "34100",
+          "price": 26000,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "40920 Облигации",
+          "amount": "40920",
+          "price": 31000,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [],
+      "faq": [],
+      "requirements": {}
+    },
+    {
+      "id": 19,
+      "name": "Arena Breakout Infinite",
+      "aliases": ["арена брейкаут инфинити", "arena breakout infinite"],
+      "currency": "Bonds",
+      "genre": "Shooter",
+      "platform": "PC",
+      "publisher": "Morefun Studios",
+      "description": "Расширенная версия Arena Breakout с улучшенной графикой и поддержкой ПК. Покупайте облигации для покупки премиум‑аккаунта, кейсов и редкого снаряжения.",
+      "minPrice": 100,
+      "image": "images/арена инфинити.jpg",
+      "icon": "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+      "packages": [
+        {
+          "name": "100 Bonds",
+          "amount": "100",
+          "price": 100,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "500 Bonds",
+          "amount": "500",
+          "price": 500,
+          "bonus": "+10 бонус",
+          "popular": true
+        },
+        {
+          "name": "1000 Bonds",
+          "amount": "1000",
+          "price": 1000,
+          "bonus": "+40 бонус",
+          "popular": false
+        },
+        {
+          "name": "2500 Bonds",
+          "amount": "2500",
+          "price": 2500,
+          "bonus": "+125 бонус",
+          "popular": false
+        },
+        {
+          "name": "5000 Bonds",
+          "amount": "5000",
+          "price": 5000,
+          "bonus": "+300 бонус",
+          "popular": false
+        },
+        {
+          "name": "7925 Bonds",
+          "amount": "7925",
+          "price": 7925,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "10000 Bonds",
+          "amount": "10000",
+          "price": 10000,
+          "bonus": "+800 бонус",
+          "popular": false
+        },
+        {
+          "name": "16100 Bonds",
+          "amount": "16100",
+          "price": 16100,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "21600 Bonds",
+          "amount": "21600",
+          "price": 21600,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "32400 Bonds",
+          "amount": "32400",
+          "price": 32400,
+          "bonus": "",
+          "popular": false
+        },
+        {
+          "name": "43200 Bonds",
+          "amount": "43200",
+          "price": 43200,
+          "bonus": "",
+          "popular": false
+        }
+      ],
+      "reviews": [],
+      "faq": [],
+      "requirements": {}
+    }
+  ]
+}
+
