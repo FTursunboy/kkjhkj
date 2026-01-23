@@ -716,15 +716,15 @@ function generateGameCard(game, linkPrefix = 'game.html') {
 
     let cardContent;
     if (game.image) {
-        cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer h-full relative bg-cover bg-center h-20 md:h-32 overflow-hidden">
+        cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                            <img src="${game.image}" alt="${game.name}" class="w-full h-full object-cover">
                        </div>`;
     } else if (isGenshin) {
-        cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer h-full relative bg-cover bg-center h-20 md:h-32 overflow-hidden">
+        cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                            <div class="w-full h-full bg-cover bg-center" style="background-image: url('images/genshin-impact.jpg.avif');"></div>
                        </div>`;
     } else {
-        cardContent = `<div class="card-hover bg-surface rounded-lg p-6 cursor-pointer h-full flex items-center justify-center h-20 md:h-32 overflow-hidden">
+        cardContent = `<div class="card-hover bg-surface rounded-lg p-6 cursor-pointer flex items-center justify-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                            <svg class="w-10 h-10 md:w-16 md:h-16 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${game.icon}"/>
                            </svg>

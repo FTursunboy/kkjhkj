@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#1A1A1A">
     
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {

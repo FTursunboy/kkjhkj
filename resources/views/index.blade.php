@@ -110,19 +110,23 @@
             </div>
 
             <nav class="flex items-center space-x-2 md:space-x-4">
+                @auth
                 <a href="/top-up" class="flex items-center justify-center text-text-primary hover:opacity-70 transition-custom border border-gray-600/60 rounded-lg px-5 py-2 text-xs md:text-base md:px-4 md:py-2">
                     <span class="user-balance whitespace-nowrap">0 ₽</span>
                     <div class="w-5 h-5 ml-2 rounded-full flex items-center justify-center border border-gray-600/60">
                         <svg class="w-3 h-3 text-accent-purple" style="filter: drop-shadow(0 0 2px #00ff88);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                     </div>
                 </a>
+                @endauth
                 <a href="/profile" class="hidden md:inline-block text-text-primary hover:opacity-70 transition-custom border border-gray-600/60 rounded-lg md:text-base md:px-4 md:py-2">Профиль</a>
             </nav>
         </div>
 
         <div id="mobileMenu" class="hidden md:hidden bg-surface border-b border-surface">
             <nav class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                @auth
                 <a href="/top-up" class="text-text-primary hover:opacity-70 transition-custom">Пополнить</a>
+                @endauth
                 <a href="/profile" class="text-text-primary hover:opacity-70 transition-custom">Профиль</a>
             </nav>
         </div>
@@ -156,18 +160,18 @@
                             </div>
                         </div>
 
-                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
-                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max px-4">
+                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max pl-10">
                                 @foreach($games as $game)
                                     <a href="/game/{{ $game['slug'] }}"
                                        class="game-card block w-20 md:w-32 text-center group snap-start"
                                        data-platform="{{ strtolower($game['platform'] ?? '') }}">
                                         @if($game['image'])
-                                            <div class="card-hover bg-surface rounded-lg cursor-pointer h-full relative bg-cover bg-center h-20 md:h-32 overflow-hidden">
+                                            <div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                                                 <img src="{{ $game['image'] }}" alt="{{ $game['name'] }}" class="w-full h-full object-cover">
                                             </div>
                                         @else
-                                            <div class="card-hover bg-surface rounded-lg p-6 cursor-pointer h-full flex items-center justify-center h-20 md:h-32 overflow-hidden">
+                                            <div class="card-hover bg-surface rounded-lg p-6 cursor-pointer flex items-center justify-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                                                 <svg class="w-10 h-10 md:w-16 md:h-16 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $game['icon'] ?? 'M5 12h14' }}"/>
                                                 </svg>
@@ -207,16 +211,16 @@
                             <div class="border-b border-white/10 pt-4"></div>
                         </div>
 
-                        <div id="gamesContainer2" class="overflow-x-auto overflow-y-hidden pb-2 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
-                            <div id="popularGamesGrid2" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max px-4">
+                        <div id="gamesContainer2" class="overflow-x-auto overflow-y-hidden pb-2 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                            <div id="popularGamesGrid2" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max pl-10">
                                 @foreach($giftCards as $card)
                                     <a href="/gift-card/{{ $card['slug'] }}" class="block w-20 md:w-32 text-center group snap-start">
                                         @if($card['image'])
-                                            <div class="card-hover bg-surface rounded-lg cursor-pointer h-full relative bg-cover bg-center h-20 md:h-32 overflow-hidden">
+                                            <div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                                                 <img src="{{ $card['image'] }}" alt="{{ $card['name'] }}" class="w-full h-full object-cover">
                                             </div>
                                         @else
-                                            <div class="card-hover bg-surface rounded-lg p-6 cursor-pointer h-full flex items-center justify-center h-20 md:h-32 overflow-hidden">
+                                            <div class="card-hover bg-surface rounded-lg p-6 cursor-pointer flex items-center justify-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                                                 <svg class="w-10 h-10 md:w-16 md:h-16 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $card['icon'] ?? 'M5 12h14' }}"/>
                                                 </svg>
@@ -289,12 +293,14 @@
             <span class="text-xs font-medium">Главная</span>
         </a>
         <!-- Пополнить -->
+        @auth
         <a href="/top-up" class="mobile-nav-item flex flex-col items-center justify-center px-4 py-1 rounded-lg text-text-secondary hover:text-text-primary transition-colors">
             <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
             </svg>
             <span class="text-xs font-medium">Пополнить</span>
         </a>
+        @endauth
         <!-- Профиль -->
         <a href="/profile" class="mobile-nav-item flex flex-col items-center justify-center px-4 py-1 rounded-lg text-text-secondary hover:text-text-primary transition-colors">
             <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -340,11 +346,11 @@
         function generateServiceCard(service) {
             let cardContent;
             if (service.image) {
-                cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer h-full relative bg-cover bg-center h-20 md:h-32 overflow-hidden">
+                cardContent = `<div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                                    <img src="${service.image}" alt="${service.name}" class="w-full h-full object-cover">
                                </div>`;
             } else {
-                cardContent = `<div class="card-hover bg-surface rounded-lg p-6 cursor-pointer h-full flex items-center justify-center h-20 md:h-32 overflow-hidden">
+                cardContent = `<div class="card-hover bg-surface rounded-lg p-6 cursor-pointer flex items-center justify-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
                            <svg class="w-10 h-10 md:w-16 md:h-16 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${service.icon}"/>
                            </svg>

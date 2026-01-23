@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -45,6 +46,7 @@ class HomeController extends Controller
         return view('index', [
             'games'     => $games,
             'giftCards' => $giftCards,
+            'isAuthenticated' => Auth::check(),
         ]);
     }
 }
