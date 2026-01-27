@@ -48,6 +48,11 @@
     <link rel="stylesheet" href="{{ asset('styles.css') }}">
     <script src="{{ asset('data-manager.js') }}"></script>
     <style>
+        @media (max-width: 768px) {
+            .game-card-mobile-pad {
+                padding-left: 30px;
+            }
+        }
         .search-results {
             position: absolute;
             top: 100%;
@@ -160,11 +165,11 @@
                             </div>
                         </div>
 
-                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
-                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max pl-10">
+                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 px-8 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max">
                                 @foreach($games as $game)
                                     <a href="/game/{{ $game['slug'] }}"
-                                       class="game-card block w-20 md:w-32 text-center group snap-start"
+                                       class="game-card game-card-mobile-pad block w-20 md:w-32 text-center group snap-start"
                                        data-platform="{{ strtolower($game['platform'] ?? '') }}">
                                         @if($game['image'])
                                             <div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">

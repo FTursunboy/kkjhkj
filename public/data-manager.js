@@ -732,7 +732,7 @@ function generateGameCard(game, linkPrefix = 'game.html') {
     }
 
     return `
-        <a href="${linkPrefix}?id=${game.id}" class="block w-20 md:w-32 text-center group">
+        <a href="${linkPrefix}?id=${game.id}" class="game-card-mobile-pad block w-20 md:w-32 text-center group">
             ${cardContent}
             <h3 class="text-[10px] md:text-base font-semibold mt-2 text-text-primary transition-colors">${game.name}</h3>
         </a>
