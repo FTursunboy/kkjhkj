@@ -302,6 +302,8 @@
         </div>
     </main>
     
+    @include('components.footer')
+
     <!-- Mobile Nav -->
     <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface h-16 z-40 flex items-center justify-around mobile-nav-border">
         <!-- Главная -->

@@ -48,6 +48,11 @@
     <link rel="stylesheet" href="{{ asset('styles.css') }}">
     <script src="{{ asset('data-manager.js') }}"></script>
     <style>
+        @media (max-width: 768px) {
+            .game-card-mobile-pad {
+                padding-left: 30px;
+            }
+        }
         .search-results {
             position: absolute;
             top: 100%;
@@ -160,11 +165,11 @@
                             </div>
                         </div>
 
-                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
-                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max pl-10">
+                        <div id="gamesContainer" class="overflow-x-auto overflow-y-hidden pb-2 px-8 scrollbar-hide snap-x snap-mandatory" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                            <div id="popularGamesGrid" class="grid grid-flow-col grid-rows-2 gap-x-2.5 gap-y-1 w-max">
                                 @foreach($games as $game)
                                     <a href="/game/{{ $game['slug'] }}"
-                                       class="game-card block w-20 md:w-32 text-center group snap-start"
+                                       class="game-card game-card-mobile-pad block w-20 md:w-32 text-center group snap-start"
                                        data-platform="{{ strtolower($game['platform'] ?? '') }}">
                                         @if($game['image'])
                                             <div class="card-hover bg-surface rounded-lg cursor-pointer relative bg-cover bg-center w-20 h-20 md:w-32 md:h-32 overflow-hidden aspect-square">
@@ -250,38 +255,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface py-12 px-4 border-t border-surface">
-        <div class="container mx-auto max-w-7xl">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Секция Lynx удалена -->
-                <div>
-                    <h4 class="font-semibold mb-4">Компания</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li><span class="cursor-default">О нас</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Поддержка</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li><span class="cursor-default">FAQ</span></li>
-                        <li><a href="https://t.me/AND_2545" target="_blank" class="hover:text-text-primary transition-custom focus:outline-none outline-none border-none focus:ring-0" style="outline: none !important; box-shadow: none !important;">Помощь</a></li>
-                        <li><span class="cursor-default">Правила</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Социальные сети</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li>Instagram</li>
-                        <li><a href="https://t.me/lynxgarant" target="_blank" class="hover:text-text-primary transition-custom focus:outline-none outline-none border-none focus:ring-0" style="outline: none !important; box-shadow: none !important;">Telegram</a></li>
-                        <li><span class="cursor-default">Discord</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-surface pt-8 text-center text-text-secondary text-sm">
-                <p>&copy; 2026 Lynx. Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
+    @include('components.footer')
 
     <!-- Mobile Nav -->
     <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface h-16 z-40 flex items-center justify-around mobile-nav-border">
