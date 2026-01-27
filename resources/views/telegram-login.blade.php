@@ -114,13 +114,15 @@
             </a>
         </div>
         
-        <!-- Bottom Text -->
-        <p class="text-center text-text-secondary text-sm mt-6">
-            Возникли проблемы? <a href="https://t.me/AND_2545" target="_blank" class="text-accent-green hover:underline focus:outline-none focus:ring-0">Напишите нам</a>
-        </p>
-    </div>
+    <!-- Bottom Text -->
+    <p class="text-center text-text-secondary text-sm mt-6">
+        Возникли проблемы? <a href="https://t.me/AND_2545" target="_blank" class="text-accent-green hover:underline focus:outline-none focus:ring-0">Напишите нам</a>
+    </p>
+</div>
 
-    <!-- Telegram Widget Script -->
+@include('components.footer')
+
+<!-- Telegram Widget Script -->
     <script async src="https://telegram.org/js/telegram-widget.js?22"
         data-telegram-login="{{ $bot_username }}"
         data-size="large"

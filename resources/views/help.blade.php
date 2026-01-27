@@ -197,6 +197,8 @@
         </a>
     </nav>
     
+    @include('components.footer')
+
     <script src="{{ asset('common.js') }}"></script>
     <script src="{{ asset('live-search.js') }}"></script>
 </body>

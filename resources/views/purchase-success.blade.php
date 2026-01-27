@@ -138,6 +138,8 @@
         </div>
     </main>
     
+    @include('components.footer')
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const stars = document.querySelectorAll('.rating-star');

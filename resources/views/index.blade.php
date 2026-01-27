@@ -250,38 +250,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface py-12 px-4 border-t border-surface">
-        <div class="container mx-auto max-w-7xl">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Секция Lynx удалена -->
-                <div>
-                    <h4 class="font-semibold mb-4">Компания</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li><span class="cursor-default">О нас</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Поддержка</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li><span class="cursor-default">FAQ</span></li>
-                        <li><a href="https://t.me/AND_2545" target="_blank" class="hover:text-text-primary transition-custom focus:outline-none outline-none border-none focus:ring-0" style="outline: none !important; box-shadow: none !important;">Помощь</a></li>
-                        <li><span class="cursor-default">Правила</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Социальные сети</h4>
-                    <ul class="space-y-2 text-text-secondary text-sm">
-                        <li>Instagram</li>
-                        <li><a href="https://t.me/lynxgarant" target="_blank" class="hover:text-text-primary transition-custom focus:outline-none outline-none border-none focus:ring-0" style="outline: none !important; box-shadow: none !important;">Telegram</a></li>
-                        <li><span class="cursor-default">Discord</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-surface pt-8 text-center text-text-secondary text-sm">
-                <p>&copy; 2026 Lynx. Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
+    @include('components.footer')
 
     <!-- Mobile Nav -->
     <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface h-16 z-40 flex items-center justify-around mobile-nav-border">
