@@ -366,6 +366,13 @@
                 }
             });
 
+            // После смены фильтра возвращаем ленту в начало,
+            // иначе на мобильных может оставаться "пустой" отступ слева.
+            const container = document.getElementById('gamesContainer');
+            if (container) {
+                container.scrollTo({ left: 0, behavior: 'auto' });
+            }
+
             setTimeout(updateScrollButtons, 100);
         }
 
