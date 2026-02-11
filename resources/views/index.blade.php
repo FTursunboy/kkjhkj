@@ -366,11 +366,24 @@
                 }
             });
 
-            // После смены фильтра возвращаем ленту в начало,
-            // иначе на мобильных может оставаться "пустой" отступ слева.
+            // После смены фильтра жестко возвращаем ленту в начало.
+            // В некоторых браузерах из-за snap/smooth после переключения
+            // категорий может оставаться визуальный отступ слева.
             const container = document.getElementById('gamesContainer');
             if (container) {
-                container.scrollTo({ left: 0, behavior: 'auto' });
+                const prevBehavior = container.style.scrollBehavior;
+                const prevSnapType = container.style.scrollSnapType;
+
+                container.style.scrollBehavior = 'auto';
+                container.style.scrollSnapType = 'none';
+                container.scrollLeft = 0;
+
+                requestAnimationFrame(() => {
+                    container.scrollLeft = 0;
+                    container.style.scrollBehavior = prevBehavior;
+                    container.style.scrollSnapType = prevSnapType;
+                    updateScrollButtons();
+                });
             }
 
             setTimeout(updateScrollButtons, 100);
