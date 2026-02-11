@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class TopUpController extends Controller
@@ -33,32 +32,21 @@ class TopUpController extends Controller
             return response()->json(['success' => false, 'message' => 'Unauthorized'], 401);
         }
 
-        $request->validate([
+        $validated = $request->validate([
             'amount' => 'required|numeric|min:100|max:100000',
             'method' => 'required|string|in:sbp,crypto',
         ]);
 
-        $amount = $request->input('amount');
-        $method = $request->input('method');
+        // Оплата еще не подключена: блокируем пополнение и не меняем баланс.
+        Log::warning('Top-up attempt blocked: payment integration is not enabled.', [
+            'user_id' => $user->id,
+            'amount' => $validated['amount'],
+            'method' => $validated['method'],
+        ]);
 
-        DB::beginTransaction();
-        try {
-            // Пока просто добавляем деньги без реальной оплаты
-            $user->balance += $amount;
-            $user->save();
-
-            DB::commit();
-            Log::info("Balance added for user {$user->id}. Amount: {$amount}, Method: {$method}, New Balance: {$user->balance}");
-
-            return response()->json([
-                'success' => true,
-                'message' => 'Баланс успешно пополнен!',
-                'new_balance' => $user->balance,
-            ]);
-        } catch (\Exception $e) {
-            DB::rollBack();
-            Log::error("Error adding balance for user {$user->id}: " . $e->getMessage());
-            return response()->json(['success' => false, 'message' => 'Ошибка при пополнении баланса'], 500);
-        }
+        return response()->json([
+            'success' => false,
+            'message' => 'Ошибка',
+        ], 503);
     }
 }
