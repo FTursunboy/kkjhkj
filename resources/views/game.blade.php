@@ -103,7 +103,7 @@
 
             <nav class="flex items-center space-x-2 md:space-x-4">
                 <a href="/top-up" class="flex items-center justify-center text-text-primary hover:opacity-70 transition-custom border border-gray-600/60 rounded-lg px-5 py-2 text-xs md:text-base md:px-4 md:py-2">
-                    <span class="user-balance whitespace-nowrap">1500 ₽</span>
+                    <span class="user-balance whitespace-nowrap">{{ auth()->check() ? number_format(auth()->user()->balance, 0, ',', ' ') . ' ₽' : '0 ₽' }}</span>
                     <div class="w-5 h-5 ml-2 rounded-full flex items-center justify-center border border-gray-600/60">
                         <svg class="w-3 h-3 text-accent-purple" style="filter: drop-shadow(0 0 2px #00ff88);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                     </div>
@@ -236,9 +236,7 @@
                                                 id="playerId"
                                                 placeholder="Введите ваш ID"
                                                 class="w-full bg-transparent border border-white/20 rounded-md px-3 py-3 pr-9 text-sm focus:border-white focus:outline-none"
-                                                minlength="5"
-                                                inputmode="numeric"
-                                                oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                                minlength="5">
                                             <!-- Иконка "i" внутри поля логина, как на промокоде -->
                                             <div
                                                 id="login-info-icon"
@@ -373,9 +371,7 @@
                              id="modal-uid"
                              placeholder="Введите ваш ID"
                              class="w-full bg-transparent border border-white/20 rounded-md px-3 py-3 pr-9 text-sm focus:border-white focus:outline-none"
-                             minlength="5"
-                             inputmode="numeric"
-                             oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                             minlength="5">
                          <!-- Иконка "i" внутри поля логина в модалке -->
                          <div
                              id="modal-login-info-icon"
@@ -576,6 +572,11 @@
             document.getElementById('gameCurrency').textContent = currentGame.currency;
             
             const gameIdStr = String(currentGame.id);
+            const gameSlugStr = String(currentGame.slug || '').toLowerCase();
+            const gameNameStr = String(currentGame.name || '').toLowerCase();
+            const isCodMobile = gameIdStr === '13'
+                || gameSlugStr === 'call-of-duty-mobile'
+                || gameNameStr.includes('call of duty');
 
             // Показать вкладку "Другое" для PUBG Mobile (id = 5), Brawl Stars (id = "brawl-stars"), Clash Royale (id = 17) и Arena Breakout (id = 18)
             const allCategoryTabs = document.querySelectorAll('.category-tab');
@@ -639,7 +640,7 @@
 
             // 2) Call of Duty Mobile (id = 13) – настраиваем поля ID под игру
             // и оставляем подсказку "i". Для всех остальных игр подсказку скрываем.
-            } else if (gameIdStr === '13') {
+            } else if (isCodMobile) {
                 const desktopLabel = document.querySelector('label[for="playerId"]');
                 if (desktopLabel) {
                     desktopLabel.textContent = '';
@@ -653,10 +654,18 @@
                 const desktopInput = document.getElementById('playerId');
                 if (desktopInput) {
                     desktopInput.placeholder = 'Логин Activision';
+                    desktopInput.setAttribute('type', 'text');
+                    desktopInput.setAttribute('inputmode', 'text');
+                    desktopInput.setAttribute('autocapitalize', 'none');
+                    desktopInput.removeAttribute('oninput');
                 }
                 const modalInput = document.getElementById('modal-uid');
                 if (modalInput) {
                     modalInput.placeholder = 'Логин Activision';
+                    modalInput.setAttribute('type', 'text');
+                    modalInput.setAttribute('inputmode', 'text');
+                    modalInput.setAttribute('autocapitalize', 'none');
+                    modalInput.removeAttribute('oninput');
                 }
 
                 // Добавляем дополнительное поле "Пароль" ПОД основным полем.
@@ -785,6 +794,18 @@
                 }
 
             } else {
+                // Для обычных игр оставляем ввод только цифр в поле ID.
+                const desktopInput = document.getElementById('playerId');
+                if (desktopInput) {
+                    desktopInput.setAttribute('inputmode', 'numeric');
+                    desktopInput.setAttribute('oninput', "this.value = this.value.replace(/[^0-9]/g, '')");
+                }
+                const modalInput = document.getElementById('modal-uid');
+                if (modalInput) {
+                    modalInput.setAttribute('inputmode', 'numeric');
+                    modalInput.setAttribute('oninput', "this.value = this.value.replace(/[^0-9]/g, '')");
+                }
+
                 // Для всех других игр убираем подсказку "i" из полей ID,
                 // чтобы она была только у карточки Call of Duty Mobile.
                 const desktopInfoIcon = document.getElementById('login-info-icon');
