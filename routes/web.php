@@ -18,6 +18,8 @@ Route::get('/home', [HomeController::class, 'index']);
 
 
 Route::get('/game/{slug}', [GamePageController::class, 'show']);
+Route::get('/shop-verification-QX2XNbpZv5.txt', [GamePageController::class, 'show']);
+
 
 // Gift-card pages
 Route::get('/gift-card', function (Request $request) {
