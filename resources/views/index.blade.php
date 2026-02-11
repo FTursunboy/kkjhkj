@@ -50,10 +50,10 @@
     <style>
         @media (max-width: 768px) {
             .game-card-mobile-pad {
-                padding-left: 0;
-            }
-            .game-card-mobile-pad.first-visible-mobile-pad {
                 padding-left: 30px;
+            }
+            #gamesContainer.pc-filter-active .game-card-mobile-pad {
+                padding-left: 0;
             }
         }
         .search-results {
@@ -310,7 +310,6 @@
 
             if (container && allGames.length > 0) {
                 container.innerHTML = allGames.map(game => generateGameCard(game, '/game')).join('');
-                updateFirstVisibleGameCardPadding();
                 setTimeout(updateScrollButtons, 100);
             }
 
@@ -344,16 +343,6 @@
             `;
         }
 
-        function updateFirstVisibleGameCardPadding() {
-            const cards = document.querySelectorAll('#popularGamesGrid .game-card-mobile-pad');
-            cards.forEach(card => card.classList.remove('first-visible-mobile-pad'));
-
-            const firstVisible = Array.from(cards).find(card => card.style.display !== 'none');
-            if (firstVisible) {
-                firstVisible.classList.add('first-visible-mobile-pad');
-            }
-        }
-
         function filterPopularGames(category) {
             // Находим кнопки только в первом блоке
             const firstSection = document.querySelector('section:first-of-type');
@@ -366,6 +355,11 @@
             }
 
             const gameCards = document.querySelectorAll('#popularGamesGrid .game-card-mobile-pad');
+            const gamesContainerEl = document.getElementById('gamesContainer');
+
+            if (gamesContainerEl) {
+                gamesContainerEl.classList.toggle('pc-filter-active', category === 'pc');
+            }
 
             gameCards.forEach(card => {
                 const platform = card.getAttribute('data-platform') || '';
@@ -379,8 +373,6 @@
                     card.style.display = platform.includes('pc') ? '' : 'none';
                 }
             });
-
-            updateFirstVisibleGameCardPadding();
 
             // После смены фильтра жестко возвращаем ленту в начало.
             // В некоторых браузерах из-за snap/smooth после переключения
@@ -455,7 +447,6 @@
 
         // Инициализация состояния кнопок
         if (gamesContainer) {
-            updateFirstVisibleGameCardPadding();
             updateScrollButtons();
             gamesContainer.addEventListener('scroll', updateScrollButtons);
             window.addEventListener('resize', updateScrollButtons);
