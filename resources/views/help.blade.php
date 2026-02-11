@@ -97,7 +97,7 @@
 
             <nav class="flex items-center space-x-2 md:space-x-4">
                 <a href="/top-up" class="flex items-center justify-center text-text-primary hover:opacity-70 transition-custom border border-gray-600/60 rounded-lg px-5 py-2 text-xs md:text-base md:px-4 md:py-2">
-                    <span class="user-balance whitespace-nowrap">1500 ₽</span>
+                    <span class="user-balance whitespace-nowrap">{{ auth()->check() ? number_format(auth()->user()->balance, 0, ',', ' ') . ' ₽' : '0 ₽' }}</span>
                     <div class="w-5 h-5 ml-2 rounded-full flex items-center justify-center border border-gray-600/60">
                         <svg class="w-3 h-3 text-accent-purple" style="filter: drop-shadow(0 0 2px #00ff88);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                     </div>
@@ -197,8 +197,6 @@
         </a>
     </nav>
     
-    @include('components.footer')
-
     <script src="{{ asset('common.js') }}"></script>
     <script src="{{ asset('live-search.js') }}"></script>
 </body>
