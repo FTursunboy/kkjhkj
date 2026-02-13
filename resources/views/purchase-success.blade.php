@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Успешная покупка | Lynx</title>
+    <title>Успешная покупка | Platinow</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -76,7 +76,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 glass-strong h-[60px] z-50">
         <div class="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
-            <a href="/" class="text-2xl font-bold gradient-text">Lynx</a>
+            <a href="/" class="text-2xl font-bold gradient-text">Platinow</a>
             
             <nav class="flex items-center space-x-2 md:space-x-4">
                 <a href="/profile" class="hidden md:inline-block text-text-primary hover:opacity-70 transition-custom border border-gray-600/60 rounded-lg md:text-base md:px-4 md:py-2">Профиль</a>

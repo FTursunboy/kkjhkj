@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <base href="{{ asset('/') }}">
-    <title>{{ $initialGame['name'] ?? 'Игра' }} | Lynx</title>
+    <title>{{ $initialGame['name'] ?? 'Игра' }} | Platinow</title>
     <meta name="description" content="Подробная информация об игре и покупка валюты.">
     <meta name="theme-color" content="#1A1A1A">
     <link rel="canonical" href="{{ url()->current() }}">
@@ -87,7 +87,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 glass-strong h-[60px] z-50">
         <div class="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
-            <a href="/" class="text-2xl font-bold gradient-text">Lynx</a>
+            <a href="/" class="text-2xl font-bold gradient-text">Platinow</a>
             
             <div class="relative flex-1 md:max-w-xl flex justify-center px-2 md:px-4">
                 <div class="relative w-4/5 md:w-full">
@@ -555,7 +555,7 @@
             }
             
             // Обновить заголовок страницы
-            document.title = `${currentGame.name} | Lynx`;
+            document.title = `${currentGame.name} | Platinow`;
             
             // Отобразить информацию об игре
             document.getElementById('gameIcon').innerHTML = `

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход через Telegram | Lynx</title>
+    <title>Вход через Telegram | Platinow</title>
     <meta name="theme-color" content="#1A1A1A">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,7 +64,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 h-[60px] z-50 bg-transparent">
         <div class="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
-            <a href="/" class="text-2xl font-bold gradient-text">Lynx</a>
+            <a href="/" class="text-2xl font-bold gradient-text">Platinow</a>
             <a href="/register" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-text-secondary hover:text-text-primary transition-all">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

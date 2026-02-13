@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="{{ asset('/') }}">
-    <title>Lynx | Виртуальная валюта для игр</title>
+    <title>Platinow | Виртуальная валюта для игр</title>
     <meta name="description" content="Покупайте внутриигровую валюту мгновенно. Быстро, безопасно, удобно.">
-    <meta name="keywords" content="внутриигровая валюта, купить валюту, gamecoins, lynx, uc, gems, premium, gift card">
+    <meta name="keywords" content="внутриигровая валюта, купить валюту, gamecoins, platinow, uc, gems, premium, gift card">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Lynx | Виртуальная валюта для игр">
+    <meta property="og:title" content="Platinow | Виртуальная валюта для игр">
     <meta property="og:description" content="Покупайте валюту и гифткарты мгновенно. Быстро, безопасно, удобно.">
     <meta property="og:image" content="{{ asset('images/telegram.jpg') }}">
     <meta name="twitter:card" content="summary_large_image">
@@ -103,7 +103,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 glass-strong h-[60px] z-50">
         <div class="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
-            <a href="/" class="text-2xl font-bold gradient-text">Lynx</a>
+            <a href="/" class="text-2xl font-bold gradient-text">Platinow</a>
 
             <div class="relative flex-1 md:max-w-xl flex justify-center px-2 md:px-4">
                 <div class="relative w-4/5 md:w-full">

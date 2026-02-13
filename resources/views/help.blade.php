@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="{{ asset('/') }}">
-    <title>Помощь | Lynx</title>
-    <meta name="description" content="Часто задаваемые вопросы и поддержка Lynx.">
+    <title>Помощь | Platinow</title>
+    <meta name="description" content="Часто задаваемые вопросы и поддержка Platinow.">
     <meta name="theme-color" content="#1A1A1A">
     <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:url" content="{{ url()->current() }}">
@@ -81,7 +81,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 glass-strong h-[60px] z-50">
         <div class="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
-            <a href="/" class="text-2xl font-bold gradient-text">Lynx</a>
+            <a href="/" class="text-2xl font-bold gradient-text">Platinow</a>
             
             <div class="relative flex-1 md:max-w-xl flex justify-center px-2 md:px-4">
                 <div class="relative w-4/5 md:w-full">
